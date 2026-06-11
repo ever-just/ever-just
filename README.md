@@ -66,13 +66,6 @@ Key files: `master-findings-report.md`, `sponsors-database.csv`, `speakers-datab
 
 ---
 
-### [status](https://github.com/ever-just/status)
-**Uptime monitor and status page for Custom Agents services.**
-
-Powered by Upptime. Tracks availability and response times for Custom Agents infrastructure. Live at [status.customagents.io](https://status.customagents.io).
-
----
-
 ### [facesmash-dev-portal](https://github.com/ever-just/facesmash-dev-portal)
 **Developer portal for FaceSmash — API keys, billing, usage analytics, and team management.**
 
@@ -92,22 +85,32 @@ Built with Next.js 16 (App Router), TypeScript, Tailwind CSS 4, and Framer Motio
 
 ---
 
-### [OSINDO](https://github.com/ever-just/OSINDO)
-**Landing page and customer portal for Osindo Mechanical Services — HVAC, auto, and mechanical repair in the Twin Cities.**
+### [JUST-WORK](https://github.com/ever-just/JUST-WORK)
+**Business directory and opportunity tracking platform for mid-market Minnesota companies ($100K–$100M ARR).**
 
-Static HTML/CSS/JS site deployed on Netlify. DNS managed programmatically via GoDaddy API. Primary CTA routes to the Assembly customer portal for scheduling and service requests.
+React + TypeScript + Vite search and discovery tool built on a normalized dataset of 2,762 Minnesota companies. Designed for surfacing legitimate mid-market businesses for partnerships, outreach, and deal sourcing.
+
+- 2,762 deduplicated company records from CSV source data
+- Advanced search and filtering across the full dataset
+- CSV-to-JSON conversion pipeline for keeping data current
 
 ---
 
-### [gasolina.ai](https://github.com/ever-just/gasolina.ai)
-**AI talent agency for creators — brand deal management from inbox to invoice.**
+### [project-fosh](https://github.com/ever-just/project-fosh)
+**Chrome extension for secure, local API key management.**
 
-Research and product architecture for an AI agent (Emma) that sits between creators and brands, handling inbound email triage, negotiation, contract review, invoicing, and payment follow-up at a lower commission than traditional agencies. Creators get text-based updates and approve or decline deals in one reply — the agent handles everything else.
+Stores API keys in Chrome's secure local storage — no cloud, no sync, no external requests. Supports add, edit, delete, search, one-click copy, and masked display. Built for developers who work with multiple services and want keys off their clipboard and out of their shell history.
 
-- Lower commission model: earns only when the creator earns
-- Real-time rate intelligence drawn from deal data across creators
-- 24/7 inbox coverage: Emma responds to brand outreach at any hour
-- Manages full deal lifecycle: outreach → negotiation → contract → payment
+---
+
+### [bid-bot-buddy](https://github.com/ever-just/bid-bot-buddy)
+**AI-powered RFP automation platform for government contracts.**
+
+Paste a public RFP URL and the system extracts scope, requirements, and deadlines; researches historical contract data and pricing trends; identifies and contacts relevant vendors; estimates pricing and profitability; and generates a complete proposal document. Built initially for Minnesota state contracts.
+
+- Flask + Python backend, React + shadcn/ui frontend
+- Playwright for universal government procurement site scraping
+- AI agents handle each stage of the proposal pipeline end-to-end
 
 ---
 
