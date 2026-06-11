@@ -18,15 +18,27 @@ Electron app powered by Google Gemma 4 E4B via `node-llama-cpp`. Reads and respo
 
 ---
 
+### [TextMyAgent](https://github.com/ever-just/TextMyAgent)
+**The original TextMyAgent service — Claude-powered executive assistant accessible via iMessage/SMS.**
+
+Built on BlueBubbles for native iMessage routing. The assistant (named Grace) maintains long-term memory across conversations, manages usage budgets and rate limits, and replies in real time. Everything runs on your own infrastructure — no vendor lock-in, no external conversation storage.
+
+- Claude-powered with persistent per-user memory
+- BlueBubbles integration for delivery receipts, read states, and typing indicators
+- Self-hosted: credentials and conversations never leave your hardware
+- Flutter mobile companion app
+
+---
+
 ### [ww.everjust.app](https://github.com/ever-just/ww.everjust.app)
-**Self-hosted, multi-tenant SaaS platform built on a debranded Odoo 19 base.**
+**Self-hosted, multi-tenant SaaS platform. Organizations get an isolated workspace at `<org>.everjust.app`.**
 
-Organizations sign up, pay via Stripe, and get an isolated workspace at `<org>.everjust.app`. Each tenant gets its own PostgreSQL database. Debranding and theming are done through add-on modules — not a core fork — so the platform stays upgradeable.
+Each tenant gets its own PostgreSQL database, fully branded as EVERJUST.APP. The control plane (FastAPI) handles signup, Stripe billing, and automated provisioning. Nginx wildcard SSL routes each subdomain to its tenant database at the infrastructure level.
 
-- Nginx wildcard SSL + `dbfilter` subdomain routing
 - Stripe billing: $100/mo base (up to 5 users) + $15/user overage
-- `everjust_brand` module replaces every upstream touchpoint at install
-- `debrand_check.sh` scans live tenants for leaks
+- Automated provisioning on payment success via Stripe webhook
+- Per-tenant database isolation — no shared state between orgs
+- `debrand_check.sh` scans live tenants for upstream reference leaks
 
 ---
 
@@ -58,6 +70,44 @@ Key files: `master-findings-report.md`, `sponsors-database.csv`, `speakers-datab
 **Uptime monitor and status page for Custom Agents services.**
 
 Powered by Upptime. Tracks availability and response times for Custom Agents infrastructure. Live at [status.customagents.io](https://status.customagents.io).
+
+---
+
+### [facesmash-dev-portal](https://github.com/ever-just/facesmash-dev-portal)
+**Developer portal for FaceSmash — API keys, billing, usage analytics, and team management.**
+
+Developers sign up with face login (biometric + liveness detection), register applications, and get API credentials to integrate FaceSmash face auth into their products. Live at [developers.facesmash.app](https://developers.facesmash.app).
+
+- Next.js 15, Drizzle ORM, PostgreSQL
+- API key lifecycle management via Unkey (create, revoke, rate limit)
+- Stripe subscriptions: Free, Pro ($29/mo), Enterprise
+- Team RBAC (Owner/Member), activity audit log, transactional email via Resend
+
+---
+
+### [weldonmakori.com](https://github.com/ever-just/weldonmakori.com)
+**Personal website — live at [weldonmakori.com](https://weldonmakori.com).**
+
+Built with Next.js 16 (App Router), TypeScript, Tailwind CSS 4, and Framer Motion. Covers career history, education (UST + Normandale), and ventures. Data-driven: work history and education records are structured JSON, not hardcoded markup.
+
+---
+
+### [OSINDO](https://github.com/ever-just/OSINDO)
+**Landing page and customer portal for Osindo Mechanical Services — HVAC, auto, and mechanical repair in the Twin Cities.**
+
+Static HTML/CSS/JS site deployed on Netlify. DNS managed programmatically via GoDaddy API. Primary CTA routes to the Assembly customer portal for scheduling and service requests.
+
+---
+
+### [gasolina.ai](https://github.com/ever-just/gasolina.ai)
+**AI talent agency for creators — brand deal management from inbox to invoice.**
+
+Research and product architecture for an AI agent (Emma) that sits between creators and brands, handling inbound email triage, negotiation, contract review, invoicing, and payment follow-up at a lower commission than traditional agencies. Creators get text-based updates and approve or decline deals in one reply — the agent handles everything else.
+
+- Lower commission model: earns only when the creator earns
+- Real-time rate intelligence drawn from deal data across creators
+- 24/7 inbox coverage: Emma responds to brand outreach at any hour
+- Manages full deal lifecycle: outreach → negotiation → contract → payment
 
 ---
 
