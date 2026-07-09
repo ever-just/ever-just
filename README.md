@@ -1,7 +1,5 @@
 # ever-just
 
-**Weldon Makori** — building AI-native tools, self-hosted platforms, and research infrastructure.
-
 ---
 
 ## Active Repos
@@ -78,13 +76,6 @@ Developers sign up with face login (biometric + liveness detection), register ap
 
 ---
 
-### [weldonmakori.com](https://github.com/ever-just/weldonmakori.com)
-**Personal website — live at [weldonmakori.com](https://weldonmakori.com).**
-
-Built with Next.js 16 (App Router), TypeScript, Tailwind CSS 4, and Framer Motion. Covers career history, education (UST + Normandale), and ventures. Data-driven: work history and education records are structured JSON, not hardcoded markup.
-
----
-
 ### [JUST-WORK](https://github.com/ever-just/JUST-WORK)
 **Business directory and opportunity tracking platform for mid-market Minnesota companies ($100K–$100M ARR).**
 
@@ -114,6 +105,3 @@ Paste a public RFP URL and the system extracts scope, requirements, and deadline
 
 ---
 
-## Contact
-
-weldon@everjust.co · [everjust.org](https://everjust.org)
