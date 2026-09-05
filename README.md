@@ -27,6 +27,18 @@
   <a href="https://github.com/ever-just/agentskills"><img alt="Agent skills" src="https://img.shields.io/badge/skills-agentskills-1D1D1F?style=flat-square"></a>
 </p>
 
+# EVERJUST
+
+EVERJUST is a Minneapolis product studio that builds and operates its own software, for founders and small teams who want one company to own the agent that answers their customers, the workspace the business lives in, and the domain, mail and portal layers underneath.
+
+## Why EverJust
+
+- **Your customers can text an AI teammate** — Custom Agents answers on SMS, iMessage and email, with the guardrails to say no.
+- **A domain your users already own goes live in about 30 seconds** — Custom Domain handles DNS, verification and HTTPS.
+- **One workspace, one flat licence, your own database** — EVERJUST.APP gives every organisation an isolated tenant rather than a shared row.
+- **Self-hosted by default** — mail, portal and workspace run on infrastructure you can see, with the source on GitHub.
+- **Open surfaces, not just a landing page** — public docs, an MCP server, a status page and a skills library you can use today.
+
 ---
 
 ![A customer's own domain going live with HTTPS in about 30 seconds](assets/connect-flow-demo.gif)
